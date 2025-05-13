@@ -5,11 +5,11 @@ return [
         'auth'=>true,
         'port'=>587,//587
         'timeout'=>5,
-        'username'=>'petr.jakimovets@gmail.com',
-        'password'=>'gzuk lihi swux gkgj',
+        'username'=>'',
+        'password'=>'',
         'charset'=>'UTF-8',
-        'from_email'=>'petr.jakimovets@gmail.com',
-        'from_name'=>'petr',
+        'from_email'=>'',
+        'from_name'=>'',
         'is_html'=>true,
     ],
 ];
