@@ -1,0 +1,188 @@
+.why-us {
+    background-image: url(./images/why-us.png);
+    background-repeat: round;
+    background-size: contain;
+
+    &__content {
+        padding-bottom: 4.3125rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+        &__content {
+            padding-bottom: 4rem;
+        }
+    }
+
+    @media screen and (max-width: 670px) {
+        &__content {
+            padding-bottom: 3.5rem;
+        }
+    }
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 670px) {
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        position: relative;
+        overflow: hidden;
+        width: 31.3%;
+        height: 280px;
+        background-color: var(--greyBackground2);
+        padding: 2rem 2.5rem 2.1875rem 1.625rem;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.5625rem;
+
+        &._grey {
+            background-color: var(--darkGreyBackground);
+            color: var(--white);
+            padding: 0;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(120deg,
+                        transparent,
+                        rgba(119, 119, 119, 0.4),
+                        transparent);
+                transition: all 650ms;
+            }
+
+            &:hover::before {
+                left: 100%;
+            }
+        }
+
+        .card-link {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            padding: 2rem 2.5rem 2.1875rem 1.625rem;
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    @media screen and (max-width: 834px) {
+        &__card  {
+            height: 220px;
+        }
+    }
+
+    @media screen and (max-width: 670px) {
+        &__card  {
+            width: 100%;
+            height: 120px;
+
+            &._grey {
+                display: none;
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 540px) {
+        &__card  {
+            height: 130px;
+        }
+    }
+
+
+    @media screen and (max-width: 375px) {
+        &__card  {
+            margin-bottom: 1rem;
+        }
+    }   
+
+    &__title-dot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 1.625rem;
+        font-weight: var(--semibold);
+    }
+
+    @media screen and (max-width: 1024px) {
+        &__title {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__description {
+        font-weight: var(--light);
+        font-size: 1.25rem;
+    }
+
+    @media screen and (max-width: 1320px) {
+        &__description {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        &__description {
+            font-size: 1.075rem;
+        }
+    }
+
+    @media screen and (max-width: 834px) {
+        &__description {
+            font-size: 1.25rem;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 440px) {
+        &__description {
+            font-size: 1.1rem;
+        }
+    }
+
+    .dot {
+        width: 11px;
+        height: 11px;
+        background-color: #000;
+        border-radius: 50%;
+    }
+
+    @media screen and (max-width: 834px) {
+        .dot {
+            width: 6px;
+            height: 6px;
+        }
+    }
+
+    .arrow-icon {
+        position: absolute;
+        right: 1.625rem;
+        bottom: 1.125rem;
+    }
+}

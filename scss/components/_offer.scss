@@ -1,0 +1,194 @@
+.offer {
+    margin-bottom: 4.3125rem;
+
+    &__content {
+        padding: 3.5rem 0rem;
+        background-color: var(--greyBackground2);
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__heading {
+        width: 67%;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 1024px) {
+        &__heading {
+            font-size: 2.4rem;
+        }
+    }
+
+    @media screen and (max-width: 440px) {
+        &__heading {
+            font-size: 2.2rem;
+            width: 96%;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        &__heading {
+            font-size: 2rem;
+        }
+    }
+
+
+    &__form {
+        width: 72%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 1024px) {
+        &__form {
+            width: 80%;
+        }
+    }
+
+    &__input-error-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 48.5%;
+        margin-bottom: 1.375rem;
+    }
+
+    @media screen and (max-width: 670px) {
+        &__input-error-wrapper {
+            width: 100%;
+        }
+    }
+
+
+    &__input-wrapper {
+        margin-bottom: 0.1rem;
+        position: relative;
+        display: inline-block;
+        font-family: "Inter";
+        padding: 1rem;
+        font-size: 0.875rem;
+        color: var(--greyFormText);
+        background-color: var(--inputWhiteFill);
+        border-radius: 20px;
+        border: 1px solid var(--inputStroke);
+    }
+
+    @media screen and (max-width: 834px) {
+        &__input-wrapper {
+            padding-left: 1.4rem;
+        }
+    }
+
+    .flag-icon {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        height: auto;
+        width: auto;
+        display: block;
+        line-height: 0;
+    }
+
+    input:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    input::placeholder {
+        color: var(--greyFormText);
+    }
+
+    &__form-tel,
+    &__form-name,
+    &__form-email {
+        height: fit-content;
+        font-size: 0.875rem;
+        padding-left: 2rem;
+        width: 100%;
+        background-color: var(--inputWhiteFill);
+    }
+
+    @media screen and (max-width: 670px) {
+        &__form-tel,
+        &__form-name,
+        &__form-email {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__form-name,
+    &__form-email {
+        padding-left: 1rem;
+    }
+
+    &__submit {
+        position: relative;
+        overflow: hidden;
+        width: 48.5%;
+        background-color: var(--darkGreyBackground);
+        font-size: 1.25rem;
+        color: var(--white);
+        font-weight: var(--light);
+        border-radius: 20px;
+        padding: 0.8125rem 2.25rem;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        cursor: pointer;
+        &:hover,
+        &:focus,
+        &:active {
+            cursor: pointer;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                120deg,
+                transparent,
+                rgba(147, 147, 147, 0.4),
+                transparent
+            );
+            transition: all 650ms;
+        }
+
+        &:hover::before {
+            left: 100%;
+        }
+    }
+
+    @media screen and (max-width: 834px) {
+        &__submit img{
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    @media screen and (max-width: 670px) {
+        &__submit {
+            width: 100%;
+        }
+    }
+
+
+
+    .error-message {
+        color: red;
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
+        font-family: "Inter";
+        display: none;
+    }
+    
+}

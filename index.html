@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welog</title>
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <header class="header">
+            <div class="header__content content_container">
+                <a href="#main"><img class="header__logo" src="./images/header-logo.svg" alt="welog"></a>
+                <nav class="header__menu nav__menu">
+                        <ul class="nav__menu-list">
+                            <li class="nav__menu-item"><a href="#about">О компании</a></li>
+                            <li class="nav__menu-item"><a href="#services">Услуги</a></li>
+                            <li class="nav__menu-item"><a href="#types">Типы перевозок</a></li>
+                            <li class="nav__menu-item"><a href="#advantages">Преимущества</a></li>
+                            <li class="nav__menu-item"><a href="#workflow">Схема работы</a></li>
+                            <li class="nav__menu-item"><a href="#footer">Контакты</a></li>
+                        </ul>
+                </nav>
+                <div class="header__btn-burger-wrapper">
+                    <a href="#form" class="header__button">Оставить заявку</a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__mobile-content">
+                <nav class="header__menu-mobile content_container nav__menu-mobile">
+                        <ul class="nav__menu-list-mobile">
+                            <li class="nav__menu-item-mobile"><a href="#about">О компании</a></li>
+                            <li class="nav__menu-item-mobile"><a href="#services">Услуги</a></li>
+                            <li class="nav__menu-item-mobile"><a href="#types">Типы перевозок</a></li>
+                            <li class="nav__menu-item-mobile"><a href="#advantages">Преимущества</a></li>
+                            <li class="nav__menu-item-mobile"><a href="#workflow">Схема работы</a></li>
+                            <li class="nav__menu-item-mobile"><a href="#footer">Контакты</a></li>
+                        </ul>
+                </nav>
+            </div>
+        </header>
+    <section id="main" class="first-screen">
+        <div class="first-screen__content content_container">
+            <img src="./images/welog.svg" alt="welog" class="first-screen__logo"></img>
+            <h1 class="first-screen__header">Международная логистика и аутсорсинг ВЭД</h1>
+            <p class="first-screen__description">Оплатим иностранному поставщику за вас и доставим товар в любую точку России за 4 дня, от 1 кг</p>
+            <a href="#form" class="first-screen__button">Рассчитать стоимость и сроки</a>
+        </div>
+    </section>
+    </div>
+
+    <main>
+        <section id="about" class="about-info">
+            <div class="about-info__content content_container">
+                <div class="about-info__wrapper">
+                    <h2 class="about-info__left-column">О компании <br>"ВИ ЛОДЖИСТИКС"</h2>
+                    <div class="about-info__right-column">
+                        <p class="about-info__right-item">Мы — команда WELOG, специалисты с профессиональным опытом в сфере международной логистики и ВЭД более 15 лет.</p>
+                        <p class="about-info__right-item">WELOG – мультимодальный логистический оператор международных перевозок из Китая, Турции, Европы и США.</p>
+                    </div>
+                </div>
+                <div class="about-info__cards">
+                    <div class="about-info__card">
+                        <p class="about-info__number">
+                            10<span class="plus">+</span>
+                        </p>
+                        <p class="about-info__text">
+                            лет опыта работы
+                        </p>
+                    </div>
+
+                    <div class="about-info__divider"></div>
+                    <div class="about-info__card">
+                        <p class="about-info__number">
+                            87<span class="percent">%</span>
+                        </p>
+                        <p class="about-info__text">
+                            клиентов становятся <br> постоянными
+                        </p>
+                    </div>
+                    <div class="about-info__divider"></div>
+
+                    <div class="about-info__card">
+                        <p class="about-info__number">
+                            50<span class="plus">+</span>
+                        </p>
+                        <p class="about-info__text">
+                            стран,в том числе Китай, <br> США, Европа, Азия и др.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <section id="services" class="services">
+            <div class="services__content content_container">
+                <h3 class="services__heading h3_heading">Услуги</h3>
+                <div class="services__wrapper">
+                    <div class="services__card">
+                        <div class="services__icon-title">
+                            <img class="services__icon" src="./images/location.svg" alt="location">
+                            <p class="services__title">Логистика</p>
+                        </div>
+                        <div class="services__divider"></div>
+                        <div class="services__description">
+                            Мы доставляем грузы в условиях санкций из Китая, Европы, Турции и США.  Предложим вам оптимальный маршрут и график доставки с учётом сроков, стоимости и специфики груза.
+                        </div>
+                    </div>
+
+                    <div class="services__card">
+                        <div class="services__icon-title">
+                            <img class="services__icon" src="./images/customs.svg" alt="customs">
+                            <p class="services__title">Таможня</p>
+                        </div>
+                        <div class="services__divider"></div>
+                        <div class="services__description">
+                            Таможенная аналитика импортных поставок
+                        </div>
+
+                    </div>
+
+                    <div class="services__card">
+                        <div class="services__icon-title">
+                            <img class="services__icon" src="./images/outsource.svg" alt="outsource">
+                            <p class="services__title">Аутсорсинг ВЭД</p>
+                        </div>
+                        <div class="services__divider"></div>
+                        <div class="services__description">
+                            Аутсорсинг ВЭД — это передача функций международной торговли и работы с зарубежными партнёрами, что позволяет снизить затраты и риски, сосредоточившись на основном бизнесе.
+                        </div>
+
+                    </div>
+
+                    <div class="services__card">
+                        <div class="services__icon-title">
+                            <img class="services__icon" src="./images/storage.svg" alt="storage">
+                            <p class="services__title">Консолидация и хранение</p>
+                        </div>
+                        <div class="services__divider"></div>
+                        <div class="services__description">
+                            Организация хранения грузов на промежуточных этапах транспортировки, если это необходимо.
+                        </div>
+
+                    </div>
+
+                    <div class="services__card">
+                        <div class="services__icon-title">
+                            <img class="services__icon" src="./images/insurance.svg" alt="insurance">
+                            <p class="services__title">Страхование грузов</p>
+                        </div>
+                        <div class="services__divider"></div>
+                        <div class="services__description">
+                            Обеспечение страховой защиты на случай повреждения или утраты груза в процессе транспортировки.
+                        </div>
+
+                    </div>
+
+                    <div class="services__card">
+                        <div class="services__icon-title">
+                            <img class="services__icon" src="./images/analystics.svg" alt="analystics">
+                            <p class="services__title">Аналитика поставок</p>
+                        </div>
+                        <div class="services__divider"></div>
+                        <div class="services__description">
+                            Аналитика поставок 
+                            помогает нашим клиентам оптимизировать свои внешнеэкономические операции, снизить затраты и риски, а также улучшить стратегическое планирование.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="types" class="shipping">
+            <div class="shipping__content content_container">
+                <h3 class="shipping__heading h3_heading">Что мы перевозим чаще всего?</h3>
+
+                <div class="shipping__wrapper">
+                    <div class="shipping__card">
+                        <span class="dot"></span>
+                        <div class="shipping__description">
+                            Любые партии коммерческих грузов от 0,1 кг
+                        </div>
+                    </div>
+
+                    <div class="shipping__card">
+                        <span class="dot"></span>
+                        <div class="shipping__description">
+                            IT оборудование, включая бренды с батарейками, электронные компоненты
+                        </div>
+                    </div>
+
+                    <div class="shipping__card">
+                        <span class="dot"></span>
+                        <div class="shipping__description">
+                            Пищевое и промышленное оборудование
+                        </div>
+                    </div>
+
+                    <div class="shipping__card">
+                        <span class="dot"></span>
+                        <div class="shipping__description">
+                            Комплектующие и запасные части
+                        </div>
+                    </div>
+
+                    <div class="shipping__card">
+                        <span class="dot"></span>
+                        <div class="shipping__description">
+                            Бытовая техника
+                        </div>
+                    </div>
+
+                    <div class="shipping__card _grey">
+                        <a href="#form" class="card-link">
+                            <img src="./images/arrow.svg" alt="arrow" class="arrow-icon">
+                            <div class="shipping__description">
+                                Оставить заявку
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <section id="advantages" class="why-us">
+            <div class="why-us__content content_container">
+                <h3 class="why-us__heading h3_heading">Нас выбирают за</h3>
+
+                <div class="why-us__wrapper">
+                    <div class="why-us__card">
+                        <div class="why-us__title-dot">
+                            <p class="why-us__title">Надёжность</p>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="why-us__description">
+                            Страхуем груз и несем ответственность за сроки доставки
+                        </div>
+                    </div>
+
+                    <div class="why-us__card">
+                        <div class="why-us__title-dot">
+                            <p class="why-us__title">Удобство и сервис</p>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="why-us__description">
+                            Предоставляем персонального менеджера. Наша команда возьмет на себя все операционные вопросы
+                        </div>
+                    </div>
+
+                    <div class="why-us__card">
+                        <div class="why-us__title-dot">
+                            <p class="why-us__title">Скорость</p>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="why-us__description">
+                            Благодаря отработанным логистическим цепочкам даем быстрые сроки на доставку
+                        </div>
+                    </div>
+
+                    <div class="why-us__card">
+                        <div class="why-us__title-dot">
+                            <p class="why-us__title">Цена</p>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="why-us__description">
+                            Конкурентные цены благодаря сборным грузоперевозкам и проверенным партнерам за рубежом
+                        </div>
+                    </div>
+
+                    <div class="why-us__card">
+                        <div class="why-us__title-dot">
+                            <p class="why-us__title">Услуга «под ключ»</p>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="why-us__description">
+                            Вам не нужны отдельные юристы,специалисты по таможне и пр. Мы реализуем полный цикл услуг
+                        </div>
+                    </div>
+
+                    <div class="why-us__card _grey">
+                        <a href="#form" class="card-link">
+                            <div class="why-us__title-dot">
+                                <p class="why-us__title">Оставить<br> заявку</p>
+                            </div>
+                            <img src="./images/arrowBigger.svg" alt="arrow" class="arrow-icon">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="workflow" class="process">
+            <div class="process__content content_container">
+                <h3 class="process__heading h3_heading">Как выстроен процесс работы?</h3>
+                <div class="process__wrapper">
+                    <div class="process__item">
+                        <p class="process__step-number">/1</p>
+                        <p class="process__description">Запрос и согласование цены</p>
+                    </div>
+
+                    <div class="process__item">
+                        <p class="process__step-number">/2</p>
+                        <p class="process__description">Оплата товара и доставка в Россию</p>
+                    </div>
+
+                    <div class="process__item">
+                        <p class="process__step-number">/3</p>
+                        <p class="process__description">Официальное таможенное оформление</p>
+                    </div>
+
+                    <div class="process__item">
+                        <p class="process__step-number">/4</p>
+                        <p class="process__description">Доставка до двери и передача товара</p>
+                    </div>
+
+                    <div class="process__item">
+                        <p class="process__step-number">/5</p>
+                        <p class="process__description">Полный комплект закрывающих документов</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="form" class="offer">
+            <div class="offer__content content_container">
+                <h3 class="offer__heading h3_heading">Оставьте заявку и получите пресональное предложение</h3>
+                <form class="offer__form" action="">
+
+                    <div class="offer__input-error-wrapper">
+                        <div class="offer__input-wrapper">
+                            <input class="offer__form-name" autocomplete="off" type="text" id="name" placeholder="Имя">
+                        </div>
+                        <p class="error-message" id="name-error"></p>
+                    </div>
+
+                    <div class="offer__input-error-wrapper">
+                        <div class="offer__input-wrapper">
+                            <img src="images/rus.svg" class="flag-icon" alt="flag">
+                            <input class="offer__form-tel" autocomplete="off" type="tel" id="tel" placeholder="+7 (999) 999-99-99">
+                        </div>
+                        <p class="error-message" id="tel-error"></p>
+                    </div>
+
+                    <div class="offer__input-error-wrapper">
+                        <div class="offer__input-wrapper">
+                            <input class="offer__form-email" autocomplete="off" type="email" id="email" placeholder="Email">
+                        </div>
+                        <p class="error-message" id="email-error"></p>
+                    </div>
+
+                    <button class="offer__submit" type="submit" id="submit">
+                        <span>Оставить заявку</span>
+                        <img src="./images/arrow.svg" alt="">
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <footer id="footer" class="footer">
+            <div class="footer__content content_container">
+                <h3 class="footer__heading h3_heading">Как с нами связаться</h3>
+                <div class="footer__networks-column">
+                    <a href="mailto:info@welog.pro">info@welog.pro</a>
+                    <a href="tel:+78122408868">+7 812 240-88-68</a>
+                    <p>Пн-Пт, 9:30 - 18:30</p>
+                </div>
+
+                <div class="footer__company-column">
+                    <p>ООО "ВиЛог"</p>
+                    <p>191124, город Санкт-Петербург, <br> Смольный пр-кт, д. 17 стр. 1, помещ. 21-н</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <div class="notification">
+        <div class="notification__content">
+            <div class="notification__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#4CAF50"/>
+                    <path d="M7 12L11 16L17 8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <p class="notification__text">Данные успешно отправлены!</p>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+<script src="./js/formSubmit.js"></script>
+<script src= "./js/headerBackground.js"></script>
+<script src= "./js/headerLinks.js"></script>
+<script src= "./js/headerBurger.js"></script>
+</html>

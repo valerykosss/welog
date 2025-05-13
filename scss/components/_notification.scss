@@ -1,0 +1,38 @@
+.notification {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    
+    &--visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    
+    &__content {
+        display: flex;
+        align-items: center;
+        background: var(--white);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 15px 20px;
+    }
+    
+    &__icon {
+        margin-right: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__text {
+        font-size: 0.875rem;
+        color: var(--black);
+        margin: 0;
+    }
+}

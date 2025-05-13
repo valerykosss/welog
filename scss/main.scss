@@ -1,0 +1,34 @@
+@import "./components/_general.scss";
+@import "./components/_background.scss";
+@import "./components/_header.scss";
+@import "./components/_first-screen.scss";
+@import "./components/_about-info.scss";
+@import "./components/_services.scss";
+@import "./components/_shipping.scss";
+@import "./components/_why-us.scss";
+@import "./components/_process.scss";
+@import "./components/_offer.scss";
+@import "./components/_footer.scss";
+@import "./components/_notification.scss";
+@import "./components/_page.scss";
+
+
+:root {
+    --white: #ffffff;
+    --black: #161616;
+    --inputWhiteFill: #FBFBFB;
+    --inputStroke: #C7C7C7;
+    --buttonBlack: #1C1C1C;
+    --lightBlack: #232323;
+    --greyBorder: #E3E3E3;
+    --greyBackground: #F3F2F6;
+    --greyBackground2: #F2F1F5;
+    --greyBackground3: #F4F3F6;
+    --greyFormText: #C3C3C3;
+    --darkGreyBackground: #474747;
+    --greyDivider: #959595;
+    --regular: 400;
+    --light: 300;
+    --thin: 100;
+    --semibold: 600;
+}
