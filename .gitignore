@@ -1,2 +1,5 @@
+# exclude everything
 *
-!.gitignore
+
+# exception to the rule
+!.gitkeep 
