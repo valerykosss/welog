@@ -153,6 +153,12 @@
         }
     }
 
+    @media screen and (max-width: 440px) {
+        &__button {
+            margin-bottom: 7.5rem;
+        }
+    }
+
     @media screen and (max-width: 375px) {
         &__button {
             padding: 1.5rem 4.4rem;
