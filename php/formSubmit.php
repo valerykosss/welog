@@ -6,8 +6,7 @@
         $name = $_POST['name'];
         $client_email = $_POST['email'];
         $tel = $_POST['tel'];
-        $email="mail@gmail.com";
-        //ТУТ ООБЯЗАТЕЛЬНО МЫЛО КОМПАНИИ
+        $email="info.welog@gmail.com";
 
         $message_body="
             <h3>Заявка от клиента:</h3>
@@ -17,7 +16,7 @@
             <i>Заявка создана ".$today."</i>
         ";
 
-        send_email([$email], "Заявка Welog", $message_body);
+        send_email([$email], "Заявка (www.welog.pro)", $message_body);
     }
     echo json_encode([
         "status" => "success",

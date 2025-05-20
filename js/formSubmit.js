@@ -22,6 +22,7 @@ $(document).ready(function() {
         const name = $('#name').val().trim();
         const email = $('#email').val().trim();
         const tel = $('#tel').val().trim();
+        const comment = $('#comment').val().trim();
         
         let isFormValid = true;
         
@@ -58,7 +59,8 @@ $(document).ready(function() {
                 data: {
                     name: name,
                     email: email,
-                    tel: tel
+                    tel: tel,
+                    comment: comment
                 },
                 success: function(response) {
                     console.log('Форма успешно отправлена', response);
@@ -71,13 +73,13 @@ $(document).ready(function() {
                 },
                 error: function(error) {
                     console.error('Ошибка при отправке формы:', error);
-                    alert('Произошла ошибка при отправке формы. Пожалуйста, попробуйте позже.');
+                    // alert('Произошла ошибка при отправке формы. Пожалуйста, попробуйте позже.');
                 }
             });
         }
     });
     
-    $('#name, #tel, #email').on('input', function() {
+    $('#name, #tel, #email, #comment').on('input', function() {
         $(this).closest('.offer__input-wrapper').removeClass('input-error');
         const errorId = $(this).attr('id') + '-error';
         $('#' + errorId).hide();
