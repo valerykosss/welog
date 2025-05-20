@@ -1299,7 +1299,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  color: var(--white);
+  color: var(--white) !important;
   width: 37%;
 }
 @media screen and (max-width: 1320px) {
