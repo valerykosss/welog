@@ -60,11 +60,11 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 1.375rem;
-        height: -webkit-fill-available;
+        height: 100%;
     }
 
     @media screen and (max-width: 670px) {
-        &__input-error-wrapper {
+        &__column {
             width: 100%;
         }
     }
@@ -123,19 +123,6 @@
         background-color: var(--inputWhiteFill);
     }
 
-    @media screen and (max-width: 670px) {
-        &__form-tel,
-        &__form-name,
-        &__form-email {
-            font-size: 1.2rem;
-        }
-    }
-
-    &__form-name,
-    &__form-email {
-        padding-left: 1rem;
-    }
-
     &__form-textarea {
         font-family: "Inter";
         font-size: 0.875rem;
@@ -144,6 +131,25 @@
         background-color: var(--inputWhiteFill);
         resize: none;
         padding: 0 1rem;
+    }
+
+    @media screen and (max-width: 670px) {
+        &__form-tel,
+        &__form-name,
+        &__form-email,    
+        &__form-textarea  {
+            font-size: 1.2rem;
+        }
+
+        &__form-textarea  {
+            height: 6rem;
+        }
+
+    }
+
+    &__form-name,
+    &__form-email {
+        padding-left: 1rem;
     }
 
     &__submit {

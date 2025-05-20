@@ -1100,10 +1100,10 @@ main {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.375rem;
-  height: -webkit-fill-available;
+  height: 100%;
 }
 @media screen and (max-width: 670px) {
-  .offer__input-error-wrapper {
+  .offer__column {
     width: 100%;
   }
 }
@@ -1155,14 +1155,6 @@ main {
   width: 100%;
   background-color: var(--inputWhiteFill);
 }
-@media screen and (max-width: 670px) {
-  .offer__form-tel, .offer__form-name, .offer__form-email {
-    font-size: 1.2rem;
-  }
-}
-.offer__form-name, .offer__form-email {
-  padding-left: 1rem;
-}
 .offer__form-textarea {
   font-family: "Inter";
   font-size: 0.875rem;
@@ -1171,6 +1163,17 @@ main {
   background-color: var(--inputWhiteFill);
   resize: none;
   padding: 0 1rem;
+}
+@media screen and (max-width: 670px) {
+  .offer__form-tel, .offer__form-name, .offer__form-email, .offer__form-textarea {
+    font-size: 1.2rem;
+  }
+  .offer__form-textarea {
+    height: 6rem;
+  }
+}
+.offer__form-name, .offer__form-email {
+  padding-left: 1rem;
 }
 .offer__submit {
   position: relative;
