@@ -1091,11 +1091,16 @@ main {
     width: 80%;
   }
 }
+.offer__column {
+  width: 48.5%;
+  display: flex;
+  flex-direction: column;
+}
 .offer__input-error-wrapper {
   display: flex;
   flex-direction: column;
-  width: 48.5%;
   margin-bottom: 1.375rem;
+  height: -webkit-fill-available;
 }
 @media screen and (max-width: 670px) {
   .offer__input-error-wrapper {
@@ -1113,6 +1118,7 @@ main {
   background-color: var(--inputWhiteFill);
   border-radius: 20px;
   border: 1px solid var(--inputStroke);
+  height: 100%;
 }
 @media screen and (max-width: 834px) {
   .offer__input-wrapper {
@@ -1129,14 +1135,16 @@ main {
   display: block;
   line-height: 0;
 }
-.offer input:focus {
+.offer input:focus,
+.offer textarea:focus {
   outline: none;
   box-shadow: none;
 }
-.offer input::-moz-placeholder {
+.offer input::-moz-placeholder, .offer textarea::-moz-placeholder {
   color: var(--greyFormText);
 }
-.offer input::placeholder {
+.offer input::placeholder,
+.offer textarea::placeholder {
   color: var(--greyFormText);
 }
 .offer__form-tel, .offer__form-name, .offer__form-email {
@@ -1155,10 +1163,19 @@ main {
 .offer__form-name, .offer__form-email {
   padding-left: 1rem;
 }
+.offer__form-textarea {
+  font-family: "Inter";
+  font-size: 0.875rem;
+  width: 100%;
+  height: 100%;
+  background-color: var(--inputWhiteFill);
+  resize: none;
+  padding: 0 1rem;
+}
 .offer__submit {
   position: relative;
   overflow: hidden;
-  width: 48.5%;
+  width: 100%;
   background-color: var(--darkGreyBackground);
   font-size: 1.25rem;
   color: var(--white);

@@ -188,21 +188,21 @@
                     <div class="shipping__card">
                         <span class="dot"></span>
                         <div class="shipping__description">
-                            Любые партии коммерческих грузов от 0,1 кг
+                            Электронные компоненты и IT-оборудование, включая бренды и с батарейками
                         </div>
                     </div>
 
                     <div class="shipping__card">
                         <span class="dot"></span>
                         <div class="shipping__description">
-                            IT оборудование, включая бренды с батарейками, электронные компоненты
+                            Промышленное оборудование различного назначения
                         </div>
                     </div>
 
                     <div class="shipping__card">
                         <span class="dot"></span>
                         <div class="shipping__description">
-                            Пищевое и промышленное оборудование
+                          Бытовая техника и товары народного потребления
                         </div>
                     </div>
 
@@ -216,7 +216,7 @@
                     <div class="shipping__card">
                         <span class="dot"></span>
                         <div class="shipping__description">
-                            Бытовая техника
+                            Любые партии коммерческих грузов от 0,1 кг
                         </div>
                     </div>
 
@@ -336,27 +336,36 @@
             <div class="offer__content content_container">
                 <h3 class="offer__heading h3_heading">Оставьте заявку и получите персональное предложение</h3>
                 <form class="offer__form" action="">
-
-                    <div class="offer__input-error-wrapper">
-                        <div class="offer__input-wrapper">
-                            <input class="offer__form-name" autocomplete="off" type="text" id="name" placeholder="Имя">
+                    <div class="offer__column">
+                        <div class="offer__input-error-wrapper">
+                            <div class="offer__input-wrapper">
+                                <input class="offer__form-name" autocomplete="off" type="text" id="name" placeholder="Имя">
+                            </div>
+                            <p class="error-message" id="name-error"></p>
                         </div>
-                        <p class="error-message" id="name-error"></p>
+
+                        <div class="offer__input-error-wrapper">
+                            <div class="offer__input-wrapper">
+                                <img src="images/rus.svg" class="flag-icon" alt="flag">
+                                <input class="offer__form-tel" autocomplete="off" type="tel" id="tel" placeholder="+7 (999) 999-99-99">
+                            </div>
+                            <p class="error-message" id="tel-error"></p>
+                        </div>
+
+                        <div class="offer__input-error-wrapper">
+                            <div class="offer__input-wrapper">
+                                <input class="offer__form-email" autocomplete="off" type="email" id="email" placeholder="Email">
+                            </div>
+                            <p class="error-message" id="email-error"></p>
+                        </div>
                     </div>
-
-                    <div class="offer__input-error-wrapper">
-                        <div class="offer__input-wrapper">
-                            <img src="images/rus.svg" class="flag-icon" alt="flag">
-                            <input class="offer__form-tel" autocomplete="off" type="tel" id="tel" placeholder="+7 (999) 999-99-99">
+                    <div class="offer__column">
+                        <div class="offer__input-error-wrapper">
+                            <div class="offer__input-wrapper">
+                                <textarea class="offer__form-textarea" placeholder="Комментарий"></textarea>
+                            </div>
+                            <p class="error-message" id="email-error"></p>
                         </div>
-                        <p class="error-message" id="tel-error"></p>
-                    </div>
-
-                    <div class="offer__input-error-wrapper">
-                        <div class="offer__input-wrapper">
-                            <input class="offer__form-email" autocomplete="off" type="email" id="email" placeholder="Email">
-                        </div>
-                        <p class="error-message" id="email-error"></p>
                     </div>
 
                     <button class="offer__submit" type="submit" id="submit">
