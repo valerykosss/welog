@@ -28,7 +28,7 @@
     @media screen and (max-width: 834px) {
         &__content {
             flex-direction: row;
-            gap: 0;
+            flex-wrap: wrap;     
         }
     }
 
@@ -51,37 +51,41 @@
         }
     }
 
-    @media screen and (max-width: 834px) {
-        &__heading {
-            width: 26%;
-        }
-    }
+    // @media screen and (max-width: 834px) {
+    //     &__heading {
+    //         width: 26%;
+    //     }
+    // }
 
-    @media screen and (max-width: 670px) {
-        &__heading {
-            width: 100%;
-        }
-    }
+    // @media screen and (max-width: 670px) {
+    //     &__heading {
+    //         width: 100%;
+    //     }
+    // }
 
     &__networks-column {
         display: flex;
         flex-direction: column;
-        gap: 0.625rem;
+        gap: 1rem;
         color: var(--white);
-        width: 18%;
+        width: 20%;
 
         a {
             color: var(--white);
+            text-decoration: underline;
+
+            img {
+                width: 2rem;
+            }
         }
     }
 
     &__company-column {
-        color: var(--white);
         display: flex;
         flex-direction: column;
         gap: 1rem;
         color: var(--white) !important;
-        width: 37%;
+        width: 30%;
     }
     
 
@@ -98,6 +102,36 @@
         }
     }
 
+    &__messangers-wrapper {
+        display: flex;
+        gap: 1rem;
+    }
 
+    &__mobile-column {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        display: none;
+        color: var(--white);
+        a {
+            color: var(--white);
+            text-decoration: underline;
+            img {
+                width: 2rem;
+            }
+        }
+    }
 
+    @media screen and (max-width: 1024px) {
+        &__company-column, 
+        &__networks-column {
+            display: none;
+        }
+
+        &__mobile-column {
+            display: flex;
+
+        }
+    }
 }
