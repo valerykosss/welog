@@ -65,10 +65,8 @@ $(document).ready(function() {
                 success: function(response) {
                     console.log('Форма успешно отправлена', response);
                     
-                    // Очищаем форму
                     $('form.offer__form')[0].reset();
                     
-                    // Показываем уведомление об успехе
                     showSuccessNotification();
                 },
                 error: function(error) {

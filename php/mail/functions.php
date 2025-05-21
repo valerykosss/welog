@@ -25,7 +25,6 @@ function send_mail(array $mail_settings, array $to, string $subject, string $bod
         foreach ($to as $email) {
             $mail->addAddress($email);
         }
-        $mail->addBCC('hrbot@colvir.com');
         if ($attachments) {
             foreach ($attachments as $attachment) {
                 $mail->addAttachment($attachment);

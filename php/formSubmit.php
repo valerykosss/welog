@@ -6,13 +6,15 @@
         $name = $_POST['name'];
         $client_email = $_POST['email'];
         $tel = $_POST['tel'];
-        $email="info.welog@gmail.com";
+        $comment = $_POST['comment'];
+        $email="ne@welog.pro";
 
         $message_body="
             <h3>Заявка от клиента:</h3>
             <p>Имя: ".$name."</p>
             <p>Почта: ".$client_email."</p>
             <p>Номер телефона: ".$tel."</p>
+            <p>Комментарий: ".$comment."</p>
             <i>Заявка создана ".$today."</i>
         ";
 
