@@ -1076,28 +1076,17 @@ main {
   }
 }
 .process__step-number {
-  padding-right: 1rem;
-}
-
-.process__step-number2,
-.process__step-number3 {
   padding-right: 0.4rem;
 }
-
 @media screen and (max-width: 440px) {
-  .process__step-number2,
-  .process__step-number3 {
+  .process__step-number {
     width: 10%;
   }
 }
 @media screen and (max-width: 375px) {
-  .process__step-number2,
-  .process__step-number3 {
+  .process__step-number {
     width: 15%;
   }
-}
-.process__step-number4 {
-  padding-right: 1rem;
 }
 
 .offer {

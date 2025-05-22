@@ -57,29 +57,19 @@
     }
 
     &__step-number {
-        padding-right: 1rem;
+        padding-right: 0.4rem;
     }
-}
 
-.process__step-number2,
-.process__step-number3 {
-    padding-right: 0.4rem;
-}
-
-@media screen and (max-width: 440px) {
-    .process__step-number2,
-    .process__step-number3 {
-        width: 10%;
+    @media screen and (max-width: 440px) {
+        &__step-number {
+            width: 10%;
+        }
     }
-}
 
-@media screen and (max-width: 375px) {
-    .process__step-number2,
-    .process__step-number3 {
-        width: 15%;
+    @media screen and (max-width: 375px) {
+        &__step-number {
+            width: 15%;
+        }
     }
-}
 
-.process__step-number4 {
-    padding-right: 1rem;
 }
