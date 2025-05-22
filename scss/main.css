@@ -903,7 +903,7 @@ main {
   position: relative;
   overflow: hidden;
   width: 31.3%;
-  height: 280px;
+  height: 250px;
   background-color: var(--greyBackground2);
   padding: 2rem 2.5rem 2.1875rem 1.625rem;
   border-radius: 25px;
@@ -940,6 +940,11 @@ main {
   padding: 2rem 2.5rem 2.1875rem 1.625rem;
   text-decoration: none;
   color: inherit;
+}
+@media screen and (max-width: 1024px) {
+  .why-us__card {
+    height: 300px;
+  }
 }
 @media screen and (max-width: 834px) {
   .why-us__card {
