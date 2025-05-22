@@ -165,7 +165,8 @@
         height: fit-content;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 1rem;
 
         cursor: pointer;
         &:hover,
