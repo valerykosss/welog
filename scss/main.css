@@ -781,7 +781,7 @@ main {
   padding: 2.625rem 1.875rem;
   border-radius: 25px;
   display: flex;
-  align-items: center;
+  align-items: start;
   margin-bottom: 1.5625rem;
 }
 .shipping__card._grey {
@@ -805,7 +805,7 @@ main {
 }
 .shipping__card .card-link {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   width: 100%;
   height: 100%;
@@ -911,7 +911,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 2rem;
   margin-bottom: 1.5625rem;
 }
 .why-us__card._grey {
@@ -1096,10 +1097,10 @@ main {
 }
 
 .offer {
-  margin-bottom: 4.3125rem;
+  margin-bottom: 2rem;
 }
 .offer__content {
-  padding: 3.5rem 0rem;
+  padding: 1.8rem 0rem;
   background-color: var(--greyBackground2);
   border-radius: 50px;
   display: flex;
@@ -1108,8 +1109,9 @@ main {
 }
 .offer__heading {
   width: 67%;
-  padding-bottom: 2rem;
+  padding-bottom: 1.6rem;
   text-align: center;
+  font-size: 2.5rem;
 }
 @media screen and (max-width: 1024px) {
   .offer__heading {
@@ -1146,7 +1148,7 @@ main {
 .offer__input-error-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.375rem;
+  margin-bottom: 0.65rem;
   height: 100%;
 }
 @media screen and (max-width: 670px) {
@@ -1159,7 +1161,7 @@ main {
   position: relative;
   display: inline-block;
   font-family: "Inter";
-  padding: 1rem;
+  padding: 0.7rem;
   font-size: 0.875rem;
   color: var(--greyFormText);
   background-color: var(--inputWhiteFill);
@@ -1231,7 +1233,7 @@ main {
   color: var(--white);
   font-weight: var(--light);
   border-radius: 20px;
-  padding: 0.8125rem 2.25rem;
+  padding: 0.7rem 2.25rem;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
@@ -1274,18 +1276,23 @@ main {
   font-family: "Inter";
   display: none;
 }
+.offer__link {
+  padding-top: 1rem;
+  font-size: 0.75rem;
+  color: var(--darkGreyBackground);
+}
 
 .footer {
   background-color: var(--black);
 }
 .footer__content {
-  padding: 3.875rem 4.25rem 6.5rem 4.25rem;
+  padding: 2.2rem 4.25rem 4rem 2.8rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 1.375rem;
+  font-size: 1.2rem;
 }
 @media screen and (max-width: 1320px) {
   .footer__content {
@@ -1315,7 +1322,7 @@ main {
 .footer__heading {
   color: var(--white);
   padding-bottom: 0;
-  width: 25%;
+  width: 30%;
 }
 @media screen and (max-width: 1024px) {
   .footer__heading {
@@ -1325,7 +1332,7 @@ main {
 .footer__networks-column {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.75rem;
   color: var(--white);
   width: 20%;
 }
@@ -1333,12 +1340,12 @@ main {
   color: var(--white);
 }
 .footer__networks-column a img {
-  width: 2rem;
+  width: 1.5rem;
 }
 .footer__company-column {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.75rem;
   color: var(--white) !important;
   width: 30%;
 }

@@ -1,8 +1,8 @@
 .offer {
-    margin-bottom: 4.3125rem;
+    margin-bottom: 2rem;
 
     &__content {
-        padding: 3.5rem 0rem;
+        padding: 1.8rem 0rem;
         background-color: var(--greyBackground2);
         border-radius: 50px;
         display: flex;
@@ -12,8 +12,9 @@
 
     &__heading {
         width: 67%;
-        padding-bottom: 2rem;
+        padding-bottom: 1.6rem;
         text-align: center;
+        font-size: 2.5rem;
     }
 
     @media screen and (max-width: 1024px) {
@@ -59,7 +60,7 @@
     &__input-error-wrapper {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1.375rem;
+        margin-bottom: 0.65rem;
         height: 100%;
     }
 
@@ -75,7 +76,7 @@
         position: relative;
         display: inline-block;
         font-family: "Inter";
-        padding: 1rem;
+        padding: 0.7rem;
         font-size: 0.875rem;
         color: var(--greyFormText);
         background-color: var(--inputWhiteFill);
@@ -161,7 +162,7 @@
         color: var(--white);
         font-weight: var(--light);
         border-radius: 20px;
-        padding: 0.8125rem 2.25rem;
+        padding: 0.7rem 2.25rem;
         height: fit-content;
         display: flex;
         flex-direction: row;
@@ -215,6 +216,12 @@
         margin-top: 0.25rem;
         font-family: "Inter";
         display: none;
+    }
+
+    &__link {
+        padding-top: 1rem;
+        font-size: 0.75rem;
+        color: var(--darkGreyBackground)
     }
     
 }
