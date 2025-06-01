@@ -1105,7 +1105,7 @@ main {
 .offer {
   margin-bottom: 2rem;
 }
-@media screen and (min-width: 1520px) {
+@media screen and (min-width: 1440px) {
   .offer {
     margin-bottom: 4rem;
   }
