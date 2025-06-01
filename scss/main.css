@@ -943,6 +943,11 @@ main {
   text-decoration: none;
   color: inherit;
 }
+@media screen and (max-width: 1320px) {
+  .why-us__card {
+    height: 280px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .why-us__card {
     height: 300px;
@@ -964,12 +969,13 @@ main {
 }
 @media screen and (max-width: 540px) {
   .why-us__card {
-    height: 130px;
+    height: 140px;
   }
 }
 @media screen and (max-width: 375px) {
   .why-us__card {
     margin-bottom: 1rem;
+    height: 160px;
   }
 }
 .why-us__title-dot {
@@ -1032,7 +1038,7 @@ main {
 }
 
 .process {
-  margin-bottom: 5.25rem;
+  margin-bottom: 4.3125rem;
 }
 @media screen and (max-width: 1024px) {
   .process {
@@ -1098,6 +1104,11 @@ main {
 
 .offer {
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 1520px) {
+  .offer {
+    margin-bottom: 4rem;
+  }
 }
 .offer__content {
   padding: 1.8rem 0rem;
@@ -1280,6 +1291,12 @@ main {
   padding-top: 1rem;
   font-size: 0.75rem;
   color: var(--darkGreyBackground);
+}
+@media screen and (max-width: 540px) {
+  .offer__link {
+    width: 80%;
+    text-align: center;
+  }
 }
 
 .footer {

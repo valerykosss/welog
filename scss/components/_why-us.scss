@@ -87,6 +87,12 @@
         }
     }
 
+    @media screen and (max-width: 1320px) {
+	    &__card  {
+            height: 280px;
+        }
+}
+
 
     @media screen and (max-width: 1024px) {
         &__card  {
@@ -114,7 +120,7 @@
 
     @media screen and (max-width: 540px) {
         &__card  {
-            height: 130px;
+            height: 140px;
         }
     }
 
@@ -122,6 +128,7 @@
     @media screen and (max-width: 375px) {
         &__card  {
             margin-bottom: 1rem;
+            height: 160px;
         }
     }   
 
