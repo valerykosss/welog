@@ -1292,6 +1292,9 @@ main {
   font-size: 0.75rem;
   color: var(--darkGreyBackground);
 }
+.offer__link a {
+  color: var(--darkGreyBackground);
+}
 @media screen and (max-width: 540px) {
   .offer__link {
     width: 80%;
@@ -1402,6 +1405,9 @@ main {
   .footer__mobile-column {
     display: flex;
   }
+}
+.footer__policy-link a {
+  color: var(--inputWhiteFill);
 }
 
 .notification {

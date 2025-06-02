@@ -228,6 +228,10 @@
         color: var(--darkGreyBackground)
     }
 
+    &__link a {
+        color: var(--darkGreyBackground)
+    }
+
     @media screen and (max-width: 540px) {
         &__link {
             width: 80%;

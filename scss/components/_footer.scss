@@ -133,7 +133,7 @@
         }
     }
 
-    // &__policy-link {
-    //     color:var(--inputWhiteFill)
-    // }
+    &__policy-link a {
+        color:var(--inputWhiteFill)
+    }
 }
